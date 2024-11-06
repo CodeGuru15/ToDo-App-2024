@@ -1,10 +1,13 @@
 {
+  "homepage": "http://CodeGuru15.github.io/ToDo-App-2024",
   "name": "to-do-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
